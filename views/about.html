@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XingTian - about</title>
+    <link href="build/common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="build/css/about.css" rel="stylesheet">
+  </head>
+  <body>
+  
+    <header>
+      <div class="filter"></div>
+      <div class="navbar-wrapper">
+        <div class="container">
+          <nav class="navbar navbar-static-top">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <span aria-hidden="true" class="glyphicon glyphicon glyphicon-fire"></span>
+                XingTian
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!-- <li><a href="/">首页</a></li> -->
+                <li class="active"><a href="/about">关于</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="ana">
+                <p>故事的开头总是这样，适逢其会，猝不及防。<br />故事的结局总是这样，花开两朵，天各一方。</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="swapper">
+                <div class="personal-header">
+                  <span class="tabbar">
+                    Personal.js
+                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </span>
+                </div>
+                <ol id="personal">
+                  <li><var>var</var> <code></code> = {</li>
+                  <li class="text-indent"><var>name</var> : <code></code>,</li>
+                  <li class="text-indent"><var>age</var> : <code></code>,</li>
+                  <li class="text-indent"><var>profession</var> : <code></code>,</li>
+                  <li class="text-indent"><var>status</var> : <code></code></li>
+                  <li>};</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sample">
+      <div class="container">
+        <div class="page-header">
+          <h1>作品集</h1>
+        </div>
+        <div class="project-wrapper">
+          <div class="project">
+            <div class="row item">
+              <div class="col-md-5 col-md-offset-1">
+                <iframe class="iframe" name="iframe1" frameborder="0"></iframe>
+              </div>
+              <div class="col-md-5 col-md-offset-1 intro">
+                <h2>列表组</h2>
+                <p>主要使用React.js框架搭建</p>
+                <p>可以选择类型</p>
+                <p>也可以进行时间排序</p>
+                <p>只适配移动端</p>
+              </div>
+            </div>
+            <div class="row item">
+              <div class="col-md-5 col-md-offset-1">
+                <iframe class="iframe" name="iframe2" frameborder="0"></iframe>
+              </div>
+              <div class="col-md-5 col-md-offset-1 intro">
+                <h2>笔记本</h2>
+                <p>主要使用Node.js的express框架搭建</p>
+                <p>配合mongodb数据库</p>
+                <p>具有登录、注册、登出基本功能</p>
+                <p>并可以添加单个笔记</p>
+                <p>也可以对笔记进行编辑/修改</p>
+                <p>UI只适配移动端</p>
+              </div>
+            </div>
+          </div>
+          <span class="glyphicon glyphicon-chevron-left shank left"></span>
+          <span class="glyphicon glyphicon-chevron-right shank right"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="container">
+        <h2>可以通过以下方式与me联系</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <img src="build/img/github.png" class="img-circle">
+              <div class="caption">
+                <h4>github</h4>
+                <p>github上存放着项目<br/>
+                  有工作上项目的总结<br/>
+                  也有平时的探索<br/>
+                  欢迎来一起“玩”出一个美好的未来</p>
+                <p><a href="https://github.com/benjiaoxz" class="btn btn-link" role="button" target="_blank">前往</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <img src="build/img/mail.png" class="img-circle">
+              <div class="caption">
+                <h4>Mail</h4>
+                <p>邮件沟通更有效率<br/>
+                  一封深思熟虑之后的精华<br/>
+                  完整的信息<br/>
+                  程序员文笔一点都不差</p>
+                <p><a href="mailto:445088977@aa.com" target="_blank" class="btn btn-link" role="button">前往</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="build/common/js/jquery.min.js"></script>
+    <script src="build/common/js/bootstrap.min.js"></script>
+    <script src="build/js/xingtian.personal.js"></script>
+    <script src="build/js/xingtian.carousel.js"></script>
+    <script>
+      
+      $(function() {
+
+        $('#personal').xingtianWriteCode({
+          message: [
+            'personal',
+            '"吴帝春"',
+            '26',
+            '"网页前端开发工程师"',
+            '"就职中"'
+          ]
+        });
+        
+        projectCarousel();
+
+      });
+
+      /***  iframe add src  
+       *    @source           资源
+       *    @current          当前
+       *    projectAddsrc      执行添加src
+      **/
+      var source = ["http://localhost:8000/list","http://localhost:9000/"];
+      var current = 0;
+      function projectCarousel() {
+        
+        var project = $('.project-wrapper').xingtianCarousel();
+        projectAddsrc();
+
+        project.on('carousel.left:shown', function() {
+          if(source[current + 1]) {
+            current++;
+          } else {
+            current = 0;
+          }
+
+          if(!$('.iframe').eq(current).attr('src')) {
+              projectAddsrc();
+          }
+        });
+        project.on('carousel.right:shown', function() {
+          if(source[current - 1]) {
+            current--;
+          } else {
+            current = source.length - 1;
+          }
+
+          if(!$('.iframe').eq(current).attr('src')) {
+              projectAddsrc();
+          }
+        });
+      }
+
+      function projectAddsrc() {
+        $('.iframe').eq(current).attr('src', source[current]);
+      }
+
+    </script>
+
+  </body>
+</html>
