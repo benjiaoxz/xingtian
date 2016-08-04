@@ -3,12 +3,12 @@
   var Plugin = function(el, options) {
     this.el = el;
     this.options = $.extend(true, {}, Plugin.DEFAULTS, options);
-console.log(this.options)
+
     if(this.el.getContext) {
       this.ctx = this.el.getContext('2d');
       Plugin.init.apply(this);
     }
-  }
+  };
 
   Plugin.DEFAULTS = {
 
@@ -26,7 +26,7 @@ console.log(this.options)
     this.ctx.fillRect(0, 0, this.el.width, this.el.height);
 
     this.ctx.restore();
-  }
+  };
 
   $.fn.navbg = function(option) {
     return this.each(function() {
@@ -37,6 +37,6 @@ console.log(this.options)
       } else {
         new Plugin(this, null);
       }
-    })
-  }
+    });
+  };
 })(jQuery);

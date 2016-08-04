@@ -13,7 +13,7 @@ function Personal() {
 			that.el.width = this.innerWidth;
 			that.el.height = this.innerHeight;
 			Personal.drawBg.apply(that);
-		}
+		};
 	}
 }
 
@@ -30,7 +30,7 @@ Personal.drawBg = function() {
 
 	for(var i = 0; i < wL; i++) {
 		for(var j = 0; j < hL; j++) {
-			if((i + j) % 2 == 0) {
+			if((i + j) % 2 === 0) {
 				this.ctx.beginPath();
 				this.ctx.fillStyle = 'rgba(255, 255, 255, ' + aph + ')';
 			} else {
@@ -54,7 +54,7 @@ Personal.drawBg = function() {
 	img.onload = function() {
 		that.ctx.drawImage(this, iX, iY, iW, iH);
 		that.ctx.restore();
-	}
+	};
 
 	img.src = 'build/img/lufei.png';
-}
+};

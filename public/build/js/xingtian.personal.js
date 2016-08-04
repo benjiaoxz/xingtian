@@ -14,7 +14,7 @@
     this.options = opt;
 
     Plugin.writeCode.call(this);
-  }
+  };
 
   Plugin.DEFAULT = {
     message: null,
@@ -22,7 +22,7 @@
     restore: 3000,
     counterS: 0,
     counterL: 0
-  }
+  };
 
   Plugin.writeCode = function() {
     var that = this,
@@ -59,12 +59,12 @@
       }
     }, that.options.speed);
     
-  }
+  };
 
   $.fn.xingtianWriteCode = function(opt) {
     return this.each(function() {
       var options = $.extend(true, {}, Plugin.DEFAULT, typeof opt == 'object' && opt);
       new Plugin(options, this);
     });
-  }
+  };
 })(jQuery);

@@ -26,11 +26,11 @@
 		this.$item.eq(this.current).addClass('open');
 
 		/* bind */
-		if(this.amount != 0) {
+		if(this.amount !== 0) {
 			this.$left.on('click', $.proxy(this.left, this));
 			this.$right.on('click', $.proxy(this.right, this));
 		}
-	}
+	};
 
 	Plugin.DEFAULT = {
 		interval: 600
@@ -93,7 +93,7 @@
 			var _current = that.current;
 			var _prev = _current;
 
-			if(_current == 0) {
+			if(_current === 0) {
 				/* first */
 				_current = that.amount;
 			} else {
@@ -135,5 +135,5 @@
 			var options = $.extend({}, Plugin.DEFAULT, typeof opt == 'object' && opt);
 			new Plugin(options, this);
 		});
-	}
+	};
 })(jQuery);
