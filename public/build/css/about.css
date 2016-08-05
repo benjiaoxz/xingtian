@@ -136,6 +136,74 @@ span.cursor {
 	50% { opacity: 0; }
 	100% { opacity: 1; }
 }
+.skill {
+	padding: 50px 0;
+	background-color: #333;
+}
+.skill-header {
+	margin-bottom: 50px;
+	color: #fff;
+	text-align: center;
+}
+.skill-header h2:before {
+	content: '{  }';
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 13px 13px;
+	background-color: #1c9dc2;
+	font-size: 30px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-right: 15px;
+}
+.skill .item {
+	display: none;
+	text-align: center;
+}
+.skill .item .item-body {
+	display: inline-block;
+	min-width: 400px;
+	opacity: 0;
+}
+.skill .item.active .item-body {
+	opacity: 1;
+	transition: opacity 0.6s;
+	-webkit-transition: opacity 0.6s;
+	-moz-transition: opacity 0.6s;
+}
+.skill .item .item-body li {
+	text-align: left;
+}
+.skill .selection {
+	margin-bottom: 30px;
+	padding: 15px;
+	text-align: center;
+}
+.skill .option {
+	display: inline-block;
+	padding: 10px 15px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgb(0, 0, 0);
+	cursor: pointer;
+	font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    font-size: 24px;
+    color: #333;
+}
+.skill .option.active {
+	color: #26a9ff;
+	box-shadow: 0 0 0 rgb(0, 0, 0);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+}
+.skill .option:first-child {
+	margin-left: 0;
+}
 .contact {
 	text-align: center;
 	padding-top: 40px;
@@ -169,13 +237,18 @@ span.cursor {
 .sample .page-header {
 	margin-bottom: 50px;
 }
+.project-thumb {
+	max-width: 100%;
+    max-height: 100%;
+}
 .project-wrapper {
 	position: relative;
-	overflow: hidden;
+	width: 1140px;
 }
 .project {
 	position: relative;
 	height: 667px;
+	overflow: hidden;
 }
 .project .item {
 	position: absolute;
@@ -190,6 +263,9 @@ span.cursor {
     /* display: flex;
     flex-direction: row;
     justify-content: center; */
+}
+.project .item .col-md-5 {
+	height: 100%;
 }
 .project .item.open {
 	z-index: 11;
@@ -259,8 +335,8 @@ span.cursor {
 	cursor: pointer;
 }
 .sample .shank.left {
-	left: 0;
+	left: -30px;
 }
 .sample .shank.right {
-	right: 0;
+	right: -10px;
 }
