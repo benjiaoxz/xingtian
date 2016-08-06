@@ -27,4 +27,5 @@ $(function() {
 			}
 		}
 	});
+	$('.option').eq(0).click();
 });
